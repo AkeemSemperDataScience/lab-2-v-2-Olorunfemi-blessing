@@ -32,8 +32,14 @@ def lab2Question4(list1, list2):
     # Return a list of the element-wise sum of the two lists - i.e. the first element of the output list is the sum of the first elements of the input lists
     # If the condition of the function is not satisfied, return a blank list
     
+    if len(list1) == len(list2):
+        sum_list = [list1[0]+ list2[0]]
+        print(sum_list)
+
+    else:
+        return []
+
     
-    sum_list = [list1[0]+ list2[0]]
 
     pass
 
