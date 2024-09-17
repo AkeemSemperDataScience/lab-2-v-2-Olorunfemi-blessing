@@ -21,6 +21,11 @@ def lab2Question3(str1, str2):
     # Create a function that takes in two strings - str1 and str2
     # Return the number of times str2 appears in str1
     # For example if str1 = "coding is cool" and str2 = "co" then output should be 2.
+    
+    str1 =str1.count(str2)
+    print(str1)
+    print(str2)
+    return None
     pass
 
 def lab2Question4(list1, list2):
