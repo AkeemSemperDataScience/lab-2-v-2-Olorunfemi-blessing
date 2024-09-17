@@ -15,7 +15,6 @@ def lab2Question2(number_val):
     while  fib_val[-1] + fib_val[0] <= number_val:
         fib_val.append(fib_val[-1] + fib_val[-2])
     return fib_val
-    pass
 
 def lab2Question3(str1, str2):
     # Create a function that takes in two strings - str1 and str2
