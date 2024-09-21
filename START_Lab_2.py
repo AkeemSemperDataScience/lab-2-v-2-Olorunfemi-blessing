@@ -13,7 +13,10 @@ def lab2Question2(number_val):
     # Return a list of the fibonacci sequence up to that number
     fib_val= [0,1]
     while  fib_val[-1] + fib_val[0] <= number_val:
-        fib_val.append(fib_val[-1] + fib_val[-2])
+        next_fib = fib_val[-1] + fib_val[-2]
+        if next_fib > number_val:
+            break
+        next_fib = fib_val.append(next_fib)
     return fib_val
 
 def lab2Question3(str1, str2):
