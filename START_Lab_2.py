@@ -11,12 +11,15 @@ def lab2Question1(word):
 def lab2Question2(number_val):
     # Create a function that takes in a number
     # Return a list of the fibonacci sequence up to that number
+    if number_val < 0:
+        return []
     fib_val= [0,1]
     while  fib_val[-1] + fib_val[0] <= number_val:
         next_fib = fib_val[-1] + fib_val[-2]
         if next_fib > number_val:
             break
         next_fib = fib_val.append(next_fib)
+        
     return fib_val
 
 def lab2Question3(str1, str2):
