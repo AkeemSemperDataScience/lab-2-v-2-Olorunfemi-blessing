@@ -55,9 +55,24 @@ def lab2Question5():
     # *Note: This function should call another function, called isValidPassword(password), 
     # that takes in a password and returns True if the password is valid, False otherwise.
     # You will need to make that function, exactly as described above. 
-    password = None
-
-    return password
+    password = None 
+    # Function to check if the password is valid
+    def isValidPassword(password):
+        if len(password) < 8:
+            return False
+        elif not any(c.islower() for c in password):
+            return False
+        elif not any(c.isupper() for c in password):
+            return False
+        elif not any(c.isdigit() for c in password):  
+            return False
+        return True
+    
+    # Keep asking the user for a valid password
+    while True:
+        password = input()
+        if isValidPassword(password):
+            return password
 
 def isValidPassword(password):
     # Create a function that takes in a password and returns True if the password is valid, False otherwise
